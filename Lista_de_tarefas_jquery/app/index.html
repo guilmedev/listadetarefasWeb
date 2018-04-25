@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <!--My style -->
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+
+</head>
+
+<div class=" container">
+
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header index-titulo">        
+        <h1>My Dashoard</h1>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+
+  
+<div class="row justify-content-md-center">
+
+<div class="form-insere col-md-5">
+  <fieldset class="panel panel-success">
+      <div class="panel-heading">Inserir Tarefa</div>
+      <form class="col-md-8 inside-panel">
+          <div class="form-group">
+              <label>Título:</label>
+              <input type="text" class="form-control" id="titulo-tarefa" placeholder="Titulo da Tarefa">
+          </div>
+          <div class="form-group">
+              <label>Atividade Inicial:</label>
+              <input type="text" class="form-control" id="nome-tarefa" placeholder="Atividade Inicial">
+          </div>
+          <button id="btn-insere" class="btn btn-success" name="btn">Inserir</button>
+      </form>
+  </fieldset>
+</div>
+
+<div class="col-md-5">
+    <fieldset class="panel panel-warning">
+        <div class="panel-heading">Inserir Nova Atividade</div>
+
+        <form class="col-md-8 inside-panel">
+            <div class="form-group">
+                <label>Título da Tarefa:</label>
+                                  
+                <select id='myTasksToinsert' class="myTasks">
+                  <!-- 
+                    Selected itens from new task button event
+                  -->                    
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label>Atividade:</label>
+                <input type="text" class="form-control" id="inserir-nome-atividade" placeholder="Nome da Atividade">
+            </div>
+            <button id="btn-insere-atividade" class="btn btn-warning" name="btn">Inserir Atividade</button>
+            
+        </form>
+    </fieldset>
+  </div>
+
+
+  <div class="col-md-2">
+      <fieldset class="panel panel-danger">
+          <div class="panel-heading">Deletar Tarefa</div>
+  
+          <form class="col-md-8 inside-panel">
+              <div class="form-group">
+                  <label>Título da Tarefa:</label>
+                                    
+                  <select id='TasksToDelete' class="myTasks">
+                    <!-- 
+                      Selected itens from new task button event
+                    -->                      
+                  </select>
+              </div>              
+              <button id="btn-deleta-atividade" class="btn btn-danger" name="btn">Deletar Tarefa</button>
+              
+          </form>
+      </fieldset>
+  
+    </div>
+</div>
+
+  <div class="main">
+    <!-- 
+      Aqui receberá todos os append do Jquery de acordo com o input-text
+    -->
+
+    
+
+  </div>
+
+</body>
+</html>
+
